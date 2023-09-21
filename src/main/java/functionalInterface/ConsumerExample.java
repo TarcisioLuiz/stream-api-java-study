@@ -14,10 +14,6 @@ public class ConsumerExample {
 //            }
 //        };
 
-        numeros.stream().forEach(numero -> {
-                    if (numero % 2 == 0) {
-                        System.out.println(numero);
-                    }
-                });
+        numeros.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
     }
 }
